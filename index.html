@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <!-- Latest compiled and minified CSS-->
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<!-- App container -->
+<body>
+  <div class="jumbotron text-center">
+    <div class="title"><h1 class="heading">A Simple Tip Calculator</h1></div>
+    <br><br>
+<div class="container">
+
+  <div class="row">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="bill-amt-label" id="bill-amt-label">Bill Amt:</div>
+          </div>
+          <div class="col-sm-8">
+            <div class="bill-amt-val" id="bill-amt-val">
+              <input id="bill-amt" type="text">
+            </div>
+          </div>
+       </div>
+    </div>
+
+  </div>
+<br>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="service-rate" id="service-rate-label">Rate Your Service:</div>
+    </div>
+
+    <div class="col-sm-8">
+    <div class="row service-toolbar">
+      <div class="col-sm-2">
+        <label><div class="container1" id="excellent" class = "serviceQuality"><input type="radio" name="service" id="excellent" value="30" checked><i class="fas fa-grin-hearts fa-2x"></i><div class="text1">30%</div></div></label>
+      </div>
+      <div class="col-sm-2">
+        <label><div class="container2" id="good" class = "serviceQuality"><input type="radio" name="service" id="good" value="20"><i class="fas fa-smile-beam fa-2x"></i><div class="text2">20%</div></div></label>
+      </div>
+      <div class="col-sm-2">
+        <label><div class="container3" id="ok" class = "serviceQuality"><input type="radio" name="service" id="ok" value="15"><i class="fas fa-smile fa-2x"></i><div class="text3">15%</div></div></label>
+      </div>
+      <div class="col-sm-2">
+        <label><div class="container4" id="bad" class = "serviceQuality"><input type="radio" name="service" id="bad" value="10"><i class="fas fa-frown fa-2x"></i><div class="text4">10%</div></div></label>
+      </div>
+      <div class="col-sm-2">
+        <label><div class="container5" id="terrible" class = "serviceQuality"><input type="radio" name="service" id="terrible" value="5"><i class="fas fa-sad-cry fa-2x"></i><div class="text5">5%</div></div></label>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="slidecontainer col-sm-6 col-sm-offset-3 centered">
+       <input type="range" min="0" max="10" value="5" class="slider" id="myRange">
+       <p class="party-size"><span id="demo"></span></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="tip-amt-label">Tip Amt:
+    <div id="total-tip">
+      <div class="row">
+        <sup>$</sup>
+        <div class="tip-amt-val">
+          <span id="tip-amt"></span>
+          <small id="each">each</small>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="row">
+    <button class="btn calculate" id="calculate">Calculate</button>
+  </div>
+  <div class="row">
+    <button class="btn clear" id="clear">Clear</button>
+  </div>
+</div>
+</div>
+
+
+<script type="text/javascript" src="js/tipcalculator.js"></script>
+</body>
+</html>
